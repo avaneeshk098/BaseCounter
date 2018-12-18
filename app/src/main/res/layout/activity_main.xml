@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.basecounter.MainActivity">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.example.android.basecounter.MainActivity">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            tools:context="com.example.android.basecounter.MainActivity">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="Team A"
+                android:textSize="16sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-light"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:text="0"
+                    android:id="@+id/runs"
+                    android:textSize="56sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:text="/"
+                    android:textSize="56sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-light"
+                    android:id = "@+id/outs"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="+1 Runs"
+
+                android:onClick="run1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+2 Runs"
+                android:layout_gravity="center"
+                android:onClick="run2"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3 Runs"
+                android:layout_gravity="center"
+                android:onClick="run3"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+4 Runs"
+                android:layout_gravity="center"
+                android:onClick="run4"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+1 Out"
+                android:layout_gravity="center"
+                android:onClick="out"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            tools:context="com.example.android.basecounter.MainActivity">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textSize="16sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-light"
+                android:text="Team B"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/runs2"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:text="/"
+                    android:textSize="56sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-light"
+                    android:id = "@+id/outs2"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="+1 Runs"
+                android:onClick="run12"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="+2 Runs"
+                android:onClick="run22"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="+3 Runs"
+                android:onClick="run32"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="+4 Runs"
+                android:onClick="run42"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="+1 Out"
+                android:onClick="out2"
+                />
+
+            </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Reset"
+        android:onClick="reset"/>
+</RelativeLayout>
